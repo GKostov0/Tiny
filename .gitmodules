@@ -1,0 +1,3 @@
+[submodule "Tiny/vendor/spdlog"]
+	path = Tiny/vendor/spdlog
+	url = https://github.com/gabime/spdlog
