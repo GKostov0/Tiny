@@ -10,6 +10,12 @@ workspace "Tiny"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Tiny/vendor/GLFW/include"
+
+include "Tiny/vendor/GLFW"
+
 project "Tiny"
 	location "Tiny"
 	kind "SharedLib"
@@ -30,7 +36,14 @@ project "Tiny"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

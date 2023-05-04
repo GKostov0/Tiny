@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Tiny/Application.h"
-#include "Tiny/Log.h"
+#include "Tiny/Core/Application.h"
+#include "Tiny/Core/Log.h"
 
 // Entry Point -------------------
-#include "Tiny/EntryPoint.h"
+#include "Tiny/Core/EntryPoint.h"
 // -------------------------------

@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Tiny/Core.h"
+#include "typch.h"
+#include "Tiny/Core/Core.h"
 
 namespace Tiny
 {

@@ -12,6 +12,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
+#include "Tiny/Core/Log.h"
+
 #ifdef TY_PLATFORM_WINDOWS
 
 	#include <Windows.h>

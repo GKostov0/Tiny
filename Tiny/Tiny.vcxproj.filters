@@ -1,23 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Tiny">
       <UniqueIdentifier>{A9EC8C7C-9523-8E0D-3E10-74102A260A0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tiny\Core">
+      <UniqueIdentifier>{A1623143-0DCD-E5B9-560B-975FC2B4C30E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Tiny\Events">
       <UniqueIdentifier>{6DA036DA-D955-AFCF-624A-A9A6CEFEA5D3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tiny\Renderer">
+      <UniqueIdentifier>{6F7E5B39-DB3E-D76F-A479-20ED10F91B4C}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Tiny.h" />
-    <ClInclude Include="src\Tiny\Application.h">
-      <Filter>Tiny</Filter>
+    <ClInclude Include="src\Tiny\Core\Application.h">
+      <Filter>Tiny\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Tiny\Core.h">
-      <Filter>Tiny</Filter>
+    <ClInclude Include="src\Tiny\Core\Core.h">
+      <Filter>Tiny\Core</Filter>
     </ClInclude>
-    <ClInclude Include="src\Tiny\EntryPoint.h">
-      <Filter>Tiny</Filter>
+    <ClInclude Include="src\Tiny\Core\EntryPoint.h">
+      <Filter>Tiny\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tiny\Core\Log.h">
+      <Filter>Tiny\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tiny\Core\Window.h">
+      <Filter>Tiny\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Tiny\Events\ApplicationEvent.h">
       <Filter>Tiny\Events</Filter>
@@ -31,17 +58,23 @@
     <ClInclude Include="src\Tiny\Events\MouseEvent.h">
       <Filter>Tiny\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Tiny\Log.h">
-      <Filter>Tiny</Filter>
+    <ClInclude Include="src\Tiny\Renderer\GraphicsContext.h">
+      <Filter>Tiny\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\typch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Tiny\Application.cpp">
-      <Filter>Tiny</Filter>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
-    <ClCompile Include="src\Tiny\Log.cpp">
-      <Filter>Tiny</Filter>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tiny\Core\Application.cpp">
+      <Filter>Tiny\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tiny\Core\Log.cpp">
+      <Filter>Tiny\Core</Filter>
     </ClCompile>
     <ClCompile Include="src\typch.cpp" />
   </ItemGroup>
