@@ -19,6 +19,10 @@
     <ClInclude Include="src\Tiny\Log.h">
       <Filter>Tiny</Filter>
     </ClInclude>
+    <ClInclude Include="src\Tiny\Events\Event.h" />
+    <ClInclude Include="src\Tiny\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Tiny\Events\KeyEvent.h" />
+    <ClInclude Include="src\Tiny\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Tiny\Application.cpp">
