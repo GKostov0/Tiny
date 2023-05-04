@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Tiny
 {
 	class TINY_API KeyEvent : public Event

@@ -18,6 +18,9 @@ project "Tiny"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "typch.h"
+	pchsource "Tiny/src/typch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

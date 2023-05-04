@@ -4,6 +4,9 @@
     <Filter Include="Tiny">
       <UniqueIdentifier>{A9EC8C7C-9523-8E0D-3E10-74102A260A0F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tiny\Events">
+      <UniqueIdentifier>{6DA036DA-D955-AFCF-624A-A9A6CEFEA5D3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Tiny.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\Tiny\EntryPoint.h">
       <Filter>Tiny</Filter>
     </ClInclude>
+    <ClInclude Include="src\Tiny\Events\ApplicationEvent.h">
+      <Filter>Tiny\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tiny\Events\Event.h">
+      <Filter>Tiny\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tiny\Events\KeyEvent.h">
+      <Filter>Tiny\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tiny\Events\MouseEvent.h">
+      <Filter>Tiny\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Tiny\Log.h">
       <Filter>Tiny</Filter>
     </ClInclude>
-    <ClInclude Include="src\Tiny\Events\Event.h" />
-    <ClInclude Include="src\Tiny\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Tiny\Events\KeyEvent.h" />
-    <ClInclude Include="src\Tiny\Events\MouseEvent.h" />
+    <ClInclude Include="src\typch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Tiny\Application.cpp">
@@ -31,5 +43,6 @@
     <ClCompile Include="src\Tiny\Log.cpp">
       <Filter>Tiny</Filter>
     </ClCompile>
+    <ClCompile Include="src\typch.cpp" />
   </ItemGroup>
 </Project>

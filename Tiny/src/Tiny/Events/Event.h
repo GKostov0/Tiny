@@ -2,9 +2,6 @@
 
 #include "Tiny/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Tiny
 {
 	enum class EventType
