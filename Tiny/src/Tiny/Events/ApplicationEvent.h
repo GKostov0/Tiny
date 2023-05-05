@@ -28,10 +28,10 @@ namespace Tiny
 		unsigned int m_Width, m_Height;
 	};
 
-	class TINY_API WindowCloaseEvent : public Event
+	class TINY_API WindowCloseEvent : public Event
 	{
 	public:
-		WindowCloaseEvent() {}
+		WindowCloseEvent() {}
 
 		EVENT_CLASS_TYPE(WindowClose)
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
