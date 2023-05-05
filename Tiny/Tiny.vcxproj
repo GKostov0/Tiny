@@ -84,6 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -110,6 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -137,6 +139,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -164,6 +167,8 @@
     <ClInclude Include="src\Tiny\Events\Event.h" />
     <ClInclude Include="src\Tiny\Events\KeyEvent.h" />
     <ClInclude Include="src\Tiny\Events\MouseEvent.h" />
+    <ClInclude Include="src\Tiny\Layer.h" />
+    <ClInclude Include="src\Tiny\LayerStack.h" />
     <ClInclude Include="src\Tiny\Renderer\GraphicsContext.h" />
     <ClInclude Include="src\typch.h" />
   </ItemGroup>
@@ -172,6 +177,8 @@
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Tiny\Core\Application.cpp" />
     <ClCompile Include="src\Tiny\Core\Log.cpp" />
+    <ClCompile Include="src\Tiny\Layer.cpp" />
+    <ClCompile Include="src\Tiny\LayerStack.cpp" />
     <ClCompile Include="src\typch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>

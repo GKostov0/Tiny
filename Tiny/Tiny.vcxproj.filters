@@ -58,6 +58,12 @@
     <ClInclude Include="src\Tiny\Events\MouseEvent.h">
       <Filter>Tiny\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Tiny\Layer.h">
+      <Filter>Tiny</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tiny\LayerStack.h">
+      <Filter>Tiny</Filter>
+    </ClInclude>
     <ClInclude Include="src\Tiny\Renderer\GraphicsContext.h">
       <Filter>Tiny\Renderer</Filter>
     </ClInclude>
@@ -75,6 +81,12 @@
     </ClCompile>
     <ClCompile Include="src\Tiny\Core\Log.cpp">
       <Filter>Tiny\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tiny\Layer.cpp">
+      <Filter>Tiny</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tiny\LayerStack.cpp">
+      <Filter>Tiny</Filter>
     </ClCompile>
     <ClCompile Include="src\typch.cpp" />
   </ItemGroup>
