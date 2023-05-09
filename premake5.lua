@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Tiny/vendor/GLFW/include"
+IncludeDir["Glad"] = "Tiny/vendor/Glad/include"
 
 include "Tiny/vendor/GLFW"
+include "Tiny/vendor/Glad"
 
 project "Tiny"
 	location "Tiny"
@@ -37,12 +39,14 @@ project "Tiny"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "Tiny"
 		defines
 		{
 			"TY_PLATFORM_WINDOWS",
-			"TY_BUILD_DLL"
+			"TY_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
