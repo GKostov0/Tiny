@@ -4,3 +4,6 @@
 [submodule "Tiny/vendor/GLFW"]
 	path = Tiny/vendor/GLFW
 	url = https://github.com/GKostov0/glfw
+[submodule "Tiny/vendor/imgui"]
+	path = Tiny/vendor/imgui
+	url = https://github.com/GKostov0/imgui
