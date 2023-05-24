@@ -27,10 +27,10 @@ namespace Tiny
 		float m_MouseX, m_MouseY;
 	};
 
-	class TINY_API MouseScrollEvent : public Event
+	class TINY_API MouseScrolledEvent : public Event
 	{
 	public:
-		MouseScrollEvent(float xOffset, float yOffset) :
+		MouseScrolledEvent(float xOffset, float yOffset) :
 			m_XOffset(xOffset), m_YOffset(yOffset) {}
 
 		inline float GetXOffset() const { return m_XOffset; }
@@ -39,7 +39,7 @@ namespace Tiny
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "MouseScrollEvent: " << GetXOffset() << ", " << GetYOffset();
+			ss << "MouseScrolledEvent: " << GetXOffset() << ", " << GetYOffset();
 			return ss.str();
 		}
 
